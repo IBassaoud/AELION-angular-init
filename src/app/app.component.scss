@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+$input-line-color: rgb(10, 25, 60);
+
+* {
+  font-family: Quicksand;
+}
+
+.app-input {
+  padding: 0.5em;
+  margin-right: 0.75em;
+  border: 2px solid chartreuse;
+  border-radius: 6px;
+}
+
+.app-input:focus {
+  outline: none;
+}
+
+.app-button {
+  padding: 0.5em 1em;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.app-p {
+  color: red;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 600;
+  span {
+    text-decoration: underline;
+  }
+}
+
+.list-container {
+  list-style-type: none;
+  padding: 0;
+  li {
+    cursor: pointer;
+    padding: 1.5em 2.5em;
+    margin: 0.75em 0;
+    &.administrator {
+      background-color: lighten($input-line-color, 25%);
+      color: #fff;
+    }
+
+    &.collaborator {
+      background-color: darken($input-line-color, 25%);
+      color: #fff;
+    }
+
+    &.visitor {
+      background-color: lighten($input-line-color, 60%);
+      color: #fff;
+    }
+    &.selected {
+      text-decoration: line-through;
+    }
+  }
+
+  .app-user__button {
+    position: absolute;
+    right: 0;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: none;
+    scale: 1.8;
+    cursor: pointer;
+  }
+}
+
+.list-container__checkbox {
+  margin-left: 13px;
+}
+
+.list-item__checkbox {
+  position: absolute;
+  left: 10px;
+  transform: translateX(50%);
+}
