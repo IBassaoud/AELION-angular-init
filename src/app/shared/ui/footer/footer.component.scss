@@ -1,0 +1,13 @@
+@import "./../../../../theme/variables.scss";
+
+div {
+    &.footer {
+        height: inherit;
+        width: inherit;
+        color: $--light;
+        background-color: $--primary;
+        border-top: solid 1px $--secondary;
+        box-shadow: Opx -1.2em .8em -1em $--secondary;
+        box-sizing: content-box;
+    }
+}

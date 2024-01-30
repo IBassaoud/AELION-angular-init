@@ -1,0 +1,14 @@
+@import "./../../../../theme/variables.scss";
+
+div {
+    &.header {
+        height: inherit;
+        width: inherit;
+        color: $--light;
+        background-color: $--primary;
+        border-bottom: solid 1px $--secondary;
+        box-shadow: Opx 1em 1em -1.2em $--secondary;
+        box-sizing: content-box;
+
+    }
+}
