@@ -1,30 +1,7 @@
-<h2>{{ title | uppercase }}</h2>
-<div>{{ counter }}</div>
-
-<ul class="list-container">
-  <!-- <div>
-    <button>
-      {{ buttonStateContent}}
-    </button>
-  </div> -->
-  <span *ngIf="users.length > 0">
-    <input (click)="handleSelectAll($event)" type="checkbox" class="list-container__checkbox" [checked]="selectedUserCount ? selectedUserCount === users.length : false"> {{ selectedUserCount === users.length ? 'Unselect' : 'Select' }} All
-    <span *ngIf="selectedUserCount">- {{ selectedUserCount }} / {{ users.length }} {{ selectedUserCount === 1 ? 'item' : 'items' }} selected</span>
-  </span>
-  <ng-container *ngFor="let user of users">
-    <li 
-    [ngClass]="{'administrator': user.role === 'administrator', 'collaborator': user.role === 'collaborator', 'visitor': user.role === 'visitor', 'selected': user.isSelected}"
-    (click)="handleSelectUser(user)"
-    >
-    <input [checked]="user.isSelected" class="list-item__checkbox" type="checkbox">
-    {{ user.lastname }} {{ user.firstname }} 
-    <span *ngIf="user.isSelected">
-      <button (click)="DeleteUser($event, user)" type="button" class="app-user__button">🗑️</button>
-    </span>
-    </li>
-  </ng-container>
-</ul>
-
-<input class="app-input" [type]="showPassword ? 'text' : 'password'">
-<button class="app-button" type="button" (click)="toggleShowPassword()" [disabled]="showPassword">Show</button>
-<p class="app-p">State of the button <span>{{ showPassword }}</span></p>
+<div class="app">
+  <app-header></app-header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer></app-footer>
+</div>

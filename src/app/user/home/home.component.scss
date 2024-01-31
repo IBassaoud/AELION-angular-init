@@ -1,0 +1,46 @@
+@import "../../../theme/variables.scss";
+
+.user-home__content {
+    background-color: $--light;
+}
+
+table {
+    &.table {
+        border: 0;
+        width: 100%;
+        font-weight: 300;
+    }
+
+    &.condensed {
+        border-collapse: collapse;
+    }
+
+    &.striped {
+        tbody {
+            tr:nth-child(odd) {
+                background-color: $--secondary
+            }
+        }
+    }
+
+    thead {
+        height: 3em;
+        line-height: 3em;
+        vertical-align: middle;
+        border-bottom: solid 1px $--primary;
+        margin-bottom: .5em;
+        th {
+            background-color: $--danger;
+        }
+    }
+
+    tbody {
+        tr {
+            height: 2em;
+            line-height: 2em;
+            vertical-align: middle;
+            text-align: left;
+            border-bottom: solid 1px $--primary;
+        }
+    }
+}

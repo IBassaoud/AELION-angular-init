@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./theme/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;500&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $--light;
+  font-family: "Roboto Condensed";
+}
+
+app-root {
+    height: inherit;
+    overflow: hidden;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

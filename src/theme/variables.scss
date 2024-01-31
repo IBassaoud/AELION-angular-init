@@ -1,0 +1,17 @@
+/**
+* Colors
+**/
+$main-color: #edede9;
+$second-color: #d6ccc2;
+$third-color: #f5ebe0;
+$four-color: #e3d5ca;
+$fifth-color: #d5bdaf;
+
+/**
+* Names colors
+**/
+$--primary: $fifth-color;
+$--secondary: $second-color;
+$--light: $main-color;
+$--warn: $third-color;
+$--danger: darken($four-color, 15%);

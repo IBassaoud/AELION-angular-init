@@ -1,4 +1,4 @@
-export type IsSelectedType = {
+export type SelectedType = {
     isSelected?: boolean,
 
 }
