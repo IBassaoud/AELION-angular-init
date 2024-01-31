@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { UserType } from './types/user-type';
-import { IsSelectedType } from './types/selected-type';
 
 @Component({
   selector: 'app-root',

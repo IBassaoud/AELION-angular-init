@@ -1,17 +1,17 @@
- /**
-  * Colors
-  **/
-  $main-color : #0A2463;
-  $second-color : #FB3640;
-  $third-color : #605F5E;
-  $fourth-color : #247BA0;
-  $fifth-color : #E2E2E2;
+/**
+* Colors
+**/
+$main-color: #edede9;
+$second-color: #d6ccc2;
+$third-color: #f5ebe0;
+$four-color: #e3d5ca;
+$fifth-color: #d5bdaf;
 
-  /**
-  * Name colors
-  **/
-  $--primary: $main-color;
-  $--secondary: $third-color;
-  $--light: $fifth-color;
-  $--warn: $second-color;
-  $--danger: darken($fourth-color, 15%);
+/**
+* Names colors
+**/
+$--primary: $fifth-color;
+$--secondary: $second-color;
+$--light: $main-color;
+$--warn: $third-color;
+$--danger: darken($four-color, 15%);
